@@ -75,7 +75,7 @@ plugins {
 android {
     namespace = "com.codinex.pejvak"
     compileSdk = 35
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     defaultConfig {
         applicationId = "com.codinex.pejvak"

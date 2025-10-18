@@ -37,7 +37,11 @@ class CalculatorResultSection extends StatelessWidget {
           ),
 
           label: const Text('محاسبه', style: TextStyle(fontSize: 18)),
-          onPressed: onCalculate,
+          onPressed: () {
+            FocusManager.instance.primaryFocus
+                ?.unfocus(); // 👈 اول کیبورد بسته بشه
+            onCalculate(); // 👈 بعد تابع محاسبه اجرا بشه
+          },
         ),
         Padding(
           padding: const EdgeInsets.only(top: 36, bottom: 8),
